@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2 family=Macondo&family=Ubuntu&display=swap');
+
 #content{
 max-width: 1600px;
 margin: 0 auto;
@@ -19,6 +21,8 @@ nav a:hover{
 .icon{
     width: 80px;
 }
+
+/*Banner*/
 
 /*Header*/
 header{
@@ -42,9 +46,11 @@ header{
 .button-box{
     text-align: center;
 }
+
 main section{
     text-align: center;
 }
+
 #background {
     height: 725px;
 }
@@ -83,8 +89,9 @@ footer{
 }
 
 footer p{
-    font-size: 102em;
+    font-size: 1.2em;
     text-decoration: underline;
+    color: #98D2EB;
 }
 
 footer a{
