@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2 family=Macondo&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
 
 #content{
 max-width: 1600px;
@@ -8,7 +8,8 @@ margin: 0 auto;
 /*nagigation bar*/
 nav a{
     text-align: center;
-    color: #98D2EB;
+    color: #36558F;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -18,15 +19,30 @@ nav a:hover{
 }
 
 /*Logo*/
+#logo_link{
+    padding-top: 5px;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 /*Banner*/
+#banner {
+    width: 100%;
+    height: 400px;
+  }
 
 /*Header*/
 header{
     background-color: #98D2EB ;
+}
+
+.msg{
+    background-color: #98D2EB ;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -36,19 +52,28 @@ header{
 
 .msg h2{
     color: #36558F;
+    line-height: 1.5em;
 }
 
 .msg p{
     color: #36558F;
+    font-family: Monsterrant, Verdana, serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 /*Button*/
 .button-box{
     text-align: center;
+    font-family: Monsterrant, Verdana, serif;
 }
 
 main section{
     text-align: center;
+}
+
+main section img{
+    box-sizing: border-box;
 }
 
 #background {
@@ -58,16 +83,39 @@ main section{
 /*Body*/
 body{
     background-color: white;
+    font-family: Monsterrant, Verdana, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 .home-title{
+    font-family: Pacifico, Arial, sans-serif;
     color: #36558F;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .book, .join{
     background-color: #98D2EB ;
     color: #36558F;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card img{
+    border: 10px solid black;
 }
 
 .book:hover, .join:hover{
@@ -79,13 +127,12 @@ body{
     background-color: white;
 }
 
-.msg{
-    background-color: #98D2EB ;
-}
-
 /*Footer*/
 footer{
     background-color: #36558F;
+    font-family: Monsterrant, Verdana, serif;
+    padding: 25px, 50px;
+    margin-top: 200px;
 }
 
 footer p{
@@ -102,4 +149,8 @@ footer a{
 footer a:hover {
     color: #36558F;
     text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
