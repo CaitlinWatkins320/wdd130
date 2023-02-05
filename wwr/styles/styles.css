@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Molle:ital@1&family=Mr+Bedfort&family=Nova+Script&display=swap');
 
 #content{
 max-width: 1600px;
 margin: 0 auto;
+
 }
 
 /*nagigation bar*/
@@ -39,6 +40,17 @@ header{
     background-color: #98D2EB ;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Molle', cursive;
+    color: #36558F;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.1em;
+    font-size: 2.25em;
+    border-top: 5px double;
+    border-bottom: 5px double;
+}
+
 .msg{
     background-color: #98D2EB ;
     line-height: 1.5em;
@@ -57,7 +69,7 @@ header{
 
 .msg p{
     color: #36558F;
-    font-family: Monsterrant, Verdana, serif;
+    font-family: 'Kavivanar', sans-serif;
     font-size: .8em;
     padding-bottom: 15px;
 }
@@ -65,7 +77,11 @@ header{
 /*Button*/
 .button-box{
     text-align: center;
-    font-family: Monsterrant, Verdana, serif;
+    font-family: 'Kavivanar', sans-serif;
+}
+.button-box a:hover{
+    background-color: #36558F;
+    color: white;
 }
 
 main section{
