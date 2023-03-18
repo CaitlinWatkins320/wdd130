@@ -1,1 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap');
+
+#content { /* for larger monitors so page is not overwhelmingly large */
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.msg {
+    font-family: 'Old Standard TT', 'Bradley Hand', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: black;
+    margin-top: 10px;
+}
+
+/*Header*/
+header{
+    background-color: #EECBB9;
+    opacity: 75%;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+/*Logo*/
+img.logo {
+    width: 80px;
+}
+
+#logo_link{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    padding-top: 5px;
+}
+
+/*Navigation*/
+nav {
+    grid-row: 1/2;
+    grid-column: 2/7;
+    display: grid;
+    justify-content: space-around; 
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    width: 100%;
+    height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 35px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #CFC4BE; 
+}
+
+/*Banner*/
+#banner-bov{
+    grid-column: 1/8;
+    grid-row: 1/5;
+    z-index: -1;
+}
+
+#banner{
+    width: 100%;
+    height: 400px;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -100px; 
+}
+
+.palette, .stylist, .lip{
+    padding-top: 10px;
+    width: 100px;
+}
+
+.palette:hover, .stylist:hover, .lip:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+/**/
+
+/*Buttons*/
+.subscribe, .learn{
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    background-color: #EBDEC5;
+    color: black;
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.subscribe:hover, .learn:hover{
+    background-color: #EECBB9;
+    color: black;
+}
+
+/*Images*/
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+main section { 
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+}
+
+main section img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.makeup, .beauty, .lipstick{
+    border: 10px solid #EECBB9;
+    margin-top: 50px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.palette-card{
+    grid-column: 2/4;
+    grid-row: 2/4; 
+}
+
+.lip-card{
+    grid-column: 5/7;
+    grid-row: 2/4;
+}
+
+.beauty-card{
+    grid-column: 8/10;
+    grid-row: 2/4; 
+}
+
+.msg {
+    grid-column: 6/10;
+    grid-row: 9/12;
+    background-color: #CFC4BE;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+    line-height: 1.5em;
+}
+
+.bottom{
+    grid-column: 2/7;
+    grid-row: 8/13;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+h3{
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #EECBB9;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px 50px;
+}
+footer .social img {
+    padding-top: 15px;
+    width: 50px;
+    display: inline-block;
+}
+footer h3 {
+    color: black;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.social {
+    justify-self: end;
+}
+
+/* media queries will just be given and explained briefly */
+@media screen and (max-width: 900px) {
+    nav, #personal, .home-grid, footer {
+      display: block;
+      height: auto;
+    }
+    header {
+        grid-template-columns: 150px auto;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #personal {
+        margin-top: 0;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    main section { 
+        margin: 50px auto;
+        width: 80%;
+    }
+    main section img {
+        margin-top: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #background {
+        display: none;
+    }
+    .bottom, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+      
